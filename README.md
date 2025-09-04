@@ -50,6 +50,43 @@ Start in production mode:
 ```bash
 npm start
 ```
+## How to Run the Laravel App
+
+1. **Install Dependencies**
+
+   ```bash
+   composer install
+   ```
+
+2. **Copy .env File**
+
+   Copy `.env.example` to `.env` and update environment variables as needed.
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. **Generate Application Key**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+4. **Run Migrations**
+
+   ```bash
+   php artisan migrate
+   ```
+
+5. **Run the Development Server**
+
+   ```bash
+   php artisan serve
+   ```
+
+   The app will be available at http://localhost:8000.
+
+> Make sure you have PHP and Composer installed on your machine.
 
 ### API Documentation
 
